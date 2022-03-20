@@ -12,6 +12,14 @@
 # below:
 .git
 .gitignore
+.gitattributes
+.idea
+.gradle
+build
+gradle
+gradlew
+gradlew.bat
+README.md
 
 node_modules
 #!include:.gitignore
