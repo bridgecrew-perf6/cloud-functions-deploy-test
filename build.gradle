@@ -10,11 +10,11 @@ plugins {
     id "org.jetbrains.kotlin.jvm" version "1.6.10"
 }
 
-java {
-    toolchain {
-        languageVersion = JavaLanguageVersion.of(11)
-    }
-}
+//java {
+//    toolchain {
+//        languageVersion = JavaLanguageVersion.of(11)
+//    }
+//}
 
 repositories {
     mavenCentral()
@@ -22,6 +22,12 @@ repositories {
 
 configurations {
     invoker
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class' : 'functions.HelloWorld'
+    }
 }
 
 dependencies {
