@@ -1,6 +1,6 @@
 # HTTP function "HelloWorld"
 steps:
-- name: 'gcr.io/cloud-builders/mvn'
+- name: 'gcr.io/cloud-builders/gradle'
   args: ['clean', 'verify']
   dir: 'function/dir/from/repo/root'
 - name: 'gcr.io/cloud-builders/gcloud'
