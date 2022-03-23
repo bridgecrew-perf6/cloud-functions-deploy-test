@@ -1,7 +1,7 @@
 # HTTP function "HelloWorld"
 steps:
 - name: 'gcr.io/cloud-builders/gradle'
-  args: ['clean', 'verify']
+  args: ['build]
   dir: '/'
 - name: 'gcr.io/cloud-builders/gcloud'
   # omit --entry-point because the function provide a entrypoint named same as function name.
